@@ -1,8 +1,8 @@
-import { Interceptor } from "./interceptor.mjs";
+import { Interceptor } from "@kronos-integration/interceptor";
 import { pipeline } from "stream";
 
 /**
- * pipes requests though a transformer stream
+ * Pipes requests though a transformer stream
  */
 export class StreamTransformInterceptor extends Interceptor {
   /**
