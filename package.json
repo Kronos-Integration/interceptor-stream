@@ -1,5 +1,5 @@
 {
-  "name": "{{fullName}}",
+  "name": "@kronos-integration/interceptor-stream",
   "version": "0.0.0-semantic-release",
   "sideEffects": false,
   "type": "module",
@@ -35,5 +35,8 @@
       "arlac77/template-github",
       "arlac77/template-kronos-component"
     ]
+  },
+  "dependencies": {
+    "@kronos-integration/interceptor": "^9.2.2"
   }
 }
