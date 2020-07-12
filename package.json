@@ -11,14 +11,17 @@
     "kronos-interceptor"
   ],
   "scripts": {
-    "cover": "--overwrite-- c8 -x 'tests/**/*' --temp-directory build/tmp ava --timeout 2m && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
     "test": "ava --timeout 2m",
-    "docs": "--overwrite-- documentation readme ./src/stream-transform-interceptor.mjs --section=API",
-    "lint": "--overwrite-- documentation lint ./src/stream-transform-interceptor.mjs"
+    "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava --timeout 2m && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
+    "docs": "documentation readme ./src/stream-transform-interceptor.mjs --section=API",
+    "lint": "documentation lint ./src/stream-transform-interceptor.mjs"
+  },
+  "dependencies": {
+    "@kronos-integration/interceptor": "^9.2.2"
   },
   "devDependencies": {
-    "c8": "^7.2.1",
     "ava": "^3.10.1",
+    "c8": "^7.2.1",
     "documentation": "^13.0.2",
     "semantic-release": "^17.1.1"
   },
@@ -35,8 +38,5 @@
       "arlac77/template-github",
       "arlac77/template-kronos-component"
     ]
-  },
-  "dependencies": {
-    "@kronos-integration/interceptor": "^9.2.2"
   }
 }
