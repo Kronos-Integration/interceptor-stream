@@ -13,14 +13,26 @@
   "keywords": [
     "kronos-interceptor"
   ],
+  "contributors": [
+    {
+      "name": "Torsten Link",
+      "email": "torstenlink@gmx.de"
+    },
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
+  "license": "BSD-2-Clause",
   "scripts": {
     "test": "ava --timeout 2m",
     "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava --timeout 2m && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
-    "docs": "documentation readme ./src/stream-transform-interceptor.mjs --section=API",
-    "lint": "documentation lint ./src/stream-transform-interceptor.mjs"
+    "docs": "documentation readme ./src/gunzip.mjs --section=API && documentation readme ./src/stream-transform-interceptor.mjs --section=API",
+    "lint": "documentation lint ./src/gunzip.mjs && documentation lint ./src/stream-transform-interceptor.mjs"
   },
   "dependencies": {
-    "@kronos-integration/interceptor": "^10.0.1"
+    "@kronos-integration/interceptor": "^10.0.1",
+    "@kronos-integration/interceptor-stream": "^1.0.1"
   },
   "devDependencies": {
     "@kronos-integration/test-interceptor": "^7.0.3",
