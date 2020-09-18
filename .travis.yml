@@ -7,5 +7,4 @@ jobs:
         provider: script
         skip_cleanup: --delete--
         cleanup: "false"
-        script:
-          - npx semantic-release
+        script: npx semantic-release
