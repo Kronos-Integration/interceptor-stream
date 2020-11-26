@@ -13,6 +13,13 @@
   "keywords": [
     "kronos-interceptor"
   ],
+  "contributors": [
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
+  "license": "BSD-2-Clause",
   "scripts": {
     "test": "npm run test:ava",
     "test:ava": "ava --timeout 2m tests/*.mjs",
