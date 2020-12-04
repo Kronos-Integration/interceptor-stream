@@ -1,0 +1,90 @@
+== Object data processor
+This processor is for validating and checking data as it comes from data imports as file imports or data base imports.
+Data where one row is one record.
+
+A config file defines how the data structure should be and creates checks out of.
+For example is a field defines as a 'date' field it will be checked that the field contains a valid date. Then
+the string value of the date will be replaced by a date object value.
+
+Also it is possible to define a severity for a field or a constraint for a field. This severity will be used
+for the generated error if the check for this constraint failed.
+
+The following figure shows an example config for a date field.
+
+[source,json]
+-----
+{
+  "lastlogin": {                  <1>
+    "fieldType": {
+      "type": "date",             <2>
+      "minDate": "01.01.1980",    <3>
+      "maxDate": "01.01.2030"     <4>
+    },
+    "mandatory": true,            <5>
+    "severity": "skip_field"      <6>
+  },
+}
+-----
+<1> The name of the field.
+<2> The type of this field (''date'').
+<3> The minimal allowed date inclusive.
+<4> The maximal allowed date inclusive.
+<5> The field is mandatory.
+<6> The severity for all the constraints.
+
+The above definition will issue for checks to be executed for this field.
+
+. Is the field filled (mnadatory = true).
+. Is the given value is a valid date.
+. Is the given date greater or equal the given minDate.
+. Is the given date less or equal the given maxDate.
+
+If one of the checks will fail all have the same severity.
+The next figure shows the same field with a slightly different configuration.
+
+[source,json]
+-----
+{
+  "lastlogin": {
+    "fieldType": {
+      "type": "date",
+    "minDate": {
+      "val": "01.01.1980",        <1>
+      "severity": "abort_file"    <2>
+    },
+      "maxDate": "01.01.2030"
+    },
+    "mandatory": true,
+    "severity": "skip_field"
+  },
+}
+-----
+<1> Now the value of the minDate is an own field.
+<2> For only this minDate check is an own severity defined.
+
+=== Definition types
+
+==== Field types
+The following field type are currently supported.
+
+* boolean
+* string
+* email
+* date
+* number, integer, float
+
+==== Default value
+If a field did not contain a value a default value could be defined. This value will
+be used if the field did not contain a value or did not contain a value in the given type.
+The default value will not be set if the field value is out of range for example.
+
+==== Multi field
+This is special problem coming from csv file imports where a field my contain a list of values
+separated with an own delimiter. For example there may be an address record with a field of
+emails of the people living at this address.
+
+The multi field definition defines how to split this list of data and how to handle it.
+
+=== Field definition overview
+
+include::./schema/field_definition.adoc[]
