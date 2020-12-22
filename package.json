@@ -27,7 +27,7 @@
     "lint:docs": "documentation lint ./src/stream-transform-interceptor.mjs"
   },
   "dependencies": {
-    "@kronos-integration/interceptor": "^10.2.3"
+    "@kronos-integration/interceptor": "^10.2.4"
   },
   "devDependencies": {
     "@kronos-integration/test-interceptor": "^7.0.9",
