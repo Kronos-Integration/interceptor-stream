@@ -8,4 +8,20 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Known Vulnerabilities](https://snyk.io/test/github/Kronos-Integration/interceptor-stream/badge.svg)](https://snyk.io/test/github/Kronos-Integration/interceptor-stream)
 [![Coverage Status](https://coveralls.io/repos/Kronos-Integration/interceptor-stream/badge.svg)](https://coveralls.io/github/Kronos-Integration/interceptor-stream)
-# interceptor-stream
+# @kronos-integration/interceptor-stream
+
+Base stream transforming interceptor
+
+# API
+
+# install
+
+With [npm](http://npmjs.org) do:
+
+```shell
+npm install @kronos-integration/interceptor-stream
+```
+
+# license
+
+BSD-2-Clause

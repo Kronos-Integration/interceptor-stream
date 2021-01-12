@@ -1,6 +1,7 @@
 {
   "name": "@kronos-integration/interceptor-stream",
   "version": "0.0.0-semantic-release",
+  "description" : "base stream transforming interceptor",
   "publishConfig": {
     "access": "public"
   },
