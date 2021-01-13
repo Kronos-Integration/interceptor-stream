@@ -1,7 +1,6 @@
 {
   "name": "@kronos-integration/interceptor-stream",
   "version": "0.0.0-semantic-release",
-  "description" : "base stream transforming interceptor",
   "publishConfig": {
     "access": "public"
   },
@@ -9,6 +8,7 @@
   "exports": {
     ".": "./src/stream-transform-interceptor.mjs"
   },
+  "description": "base stream transforming interceptor",
   "keywords": [
     "kronos-interceptor"
   ],
@@ -35,7 +35,7 @@
     "ava": "^3.15.0",
     "c8": "^7.4.0",
     "documentation": "github:arlac77/documentation",
-    "semantic-release": "^17.3.1"
+    "semantic-release": "^17.3.2"
   },
   "engines": {
     "node": ">=14.15.4"
