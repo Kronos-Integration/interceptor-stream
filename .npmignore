@@ -7,3 +7,4 @@ doc
 .tmp
 .test
 .vscode
+jsconfig.json
