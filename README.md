@@ -2,12 +2,12 @@
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![minified size](https://badgen.net/bundlephobia/min/@kronos-integration/interceptor-stream)](https://bundlephobia.com/result?p=@kronos-integration/interceptor-stream)
 [![downloads](http://img.shields.io/npm/dm/@kronos-integration/interceptor-stream.svg?style=flat-square)](https://npmjs.org/package/@kronos-integration/interceptor-stream)
-[![GitHub Issues](https://img.shields.io/github/issues/interceptor-stream/interceptor-stream.svg?style=flat-square)](https://github.com/interceptor-stream/interceptor-stream/issues)
-[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Finterceptor-stream%2Finterceptor-stream%2Fbadge\&style=flat)](https://actions-badge.atrox.dev/interceptor-stream/interceptor-stream/goto)
+[![GitHub Issues](https://img.shields.io/github/issues/Kronos-Integration/interceptor-stream.svg?style=flat-square)](https://github.com/Kronos-Integration/interceptor-stream/issues)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FKronos-Integration%2Finterceptor-stream%2Fbadge\&style=flat)](https://actions-badge.atrox.dev/Kronos-Integration/interceptor-stream/goto)
 [![Styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Known Vulnerabilities](https://snyk.io/test/github/interceptor-stream/interceptor-stream/badge.svg)](https://snyk.io/test/github/interceptor-stream/interceptor-stream)
-[![Coverage Status](https://coveralls.io/repos/interceptor-stream/interceptor-stream/badge.svg)](https://coveralls.io/github/interceptor-stream/interceptor-stream)
+[![Known Vulnerabilities](https://snyk.io/test/github/Kronos-Integration/interceptor-stream/badge.svg)](https://snyk.io/test/github/Kronos-Integration/interceptor-stream)
+[![Coverage Status](https://coveralls.io/repos/Kronos-Integration/interceptor-stream/badge.svg)](https://coveralls.io/github/Kronos-Integration/interceptor-stream)
 
 # @kronos-integration/interceptor-stream
 
