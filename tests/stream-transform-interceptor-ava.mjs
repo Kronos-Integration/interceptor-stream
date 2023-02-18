@@ -1,14 +1,12 @@
 import test from "ava";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+import { createGzip } from "node:zlib";
+import { createReadStream } from "node:fs";
 import {
   dummyEndpoint,
   interceptorTest
 } from "@kronos-integration/test-interceptor";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
-
-import { createGzip } from "zlib";
-import { createReadStream } from "fs";
-
 import { StreamTransformInterceptor } from "@kronos-integration/interceptor-stream";
 
 const here = dirname(fileURLToPath(import.meta.url));

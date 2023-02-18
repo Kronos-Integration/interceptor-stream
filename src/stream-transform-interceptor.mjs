@@ -1,5 +1,5 @@
 import { Interceptor } from "@kronos-integration/interceptor";
-import { pipeline } from "stream";
+import { pipeline } from "node:stream";
 
 /**
  * Pipes requests though a transformer stream
